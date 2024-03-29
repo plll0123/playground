@@ -1,0 +1,10 @@
+#spring:
+#  sql:
+#    init:
+#      mode: always
+
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create

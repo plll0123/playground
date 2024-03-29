@@ -1,8 +1,12 @@
 plugins {
+    id("com.study.common")
     kotlin("jvm")
 }
 
-repositories {
-    mavenCentral()
-    gradlePluginPortal()
+dependencies {
+    testImplementation("io.mockk:mockk:1.13.10")
+}
+
+tasks.withType<Test>().configureEach {
+    useJUnitPlatform()
 }

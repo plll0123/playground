@@ -1,0 +1,15 @@
+plugins {
+    id("com.study.spring")
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+dependencies {
+    testImplementation("io.kotest:kotest-assertions-core:5.8.1")
+//    testImplementation("io.kotest.extensions:kotest-extensions-testcontainers:2.0.2")
+    testImplementation("org.testcontainers:testcontainers-bom:1.19.7")
+//    testImplementation("org.testcontainers:postgresql")
+}
